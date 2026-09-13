@@ -1,0 +1,9 @@
+PASS create: UUID, profile, attributes, SCIM meta response
+PASS partial update: complete snapshot, disabled account, preserved attributes
+PASS rapid re-enable/delete: physical DELETE
+PASS group creation, nested path, member UUID translation
+PASS rename, member removal/re-add, cascading group deletion
+PASS outage: committed admin changes retained in MariaDB outbox
+PASS container recreation: retained queue resumes without duplicate users/groups
+PASS rejected admin mutation leaves no outbox entry
+ALL GROUP/OUTBOX E2E CHECKS PASSED

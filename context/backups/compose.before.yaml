@@ -1,0 +1,51 @@
+services:
+  mariadb:
+    image: mariadb:12.3.3
+    container_name: keycloak-mariadb
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_DATABASE: keycloak
+    ports:
+      - "127.0.0.1:3307:3306"
+    volumes:
+      - mariadb_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+    networks:
+      - keycloak_net
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.7.3
+    container_name: keycloak
+    restart: unless-stopped
+    command: start-dev
+    environment:
+      KC_BOOTSTRAP_ADMIN_USERNAME: root
+      KC_BOOTSTRAP_ADMIN_PASSWORD: root
+      KC_DB: mariadb
+      KC_DB_URL: jdbc:mariadb://mariadb:3306/keycloak
+      KC_DB_USERNAME: root
+      KC_DB_PASSWORD: root
+      KC_HEALTH_ENABLED: "true"
+    ports:
+      - "127.0.0.1:8080:8080"
+    volumes:
+      - ../keycloak-scim-outbound/target/keycloak-scim-outbound-1.2.0.jar:/opt/keycloak/providers/keycloak-scim-outbound-1.2.0.jar:ro
+    depends_on:
+      mariadb:
+        condition: service_healthy
+    networks:
+      - keycloak_net
+
+volumes:
+  mariadb_data:
+    name: keycloak_mariadb_data
+
+networks:
+  keycloak_net:
+    name: keycloak_net

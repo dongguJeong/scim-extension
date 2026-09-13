@@ -1,0 +1,38 @@
+Appending additional Java properties to JAVA_OPTS
+Updating the configuration and installing your custom providers, if any. Please wait.
+2026-09-13 13:11:11,333 WARN  [org.keycloak.common.Profile] (build-9) Deprecated features identity-brokering-api:v1, twitter-broker:v1 enabled by default. Check the upgrading guide for steps to use later versions if available.
+2026-09-13 13:11:11,732 WARN  [org.keycloak.services] (build-5) KC-SERVICES0047: scim-outbox (com.example.keycloak.queue.ScimJpaProviderFactory) is implementing the internal SPI jpa-entity-provider. This SPI is internal and may change without notice
+2026-09-13 13:11:12,112 WARN  [org.keycloak.services] (build-5) KC-SERVICES0047: scim-admin-listener (com.example.keycloak.AdminScimEventListenerProviderFactory) is implementing the internal SPI eventsListener. This SPI is internal and may change without notice
+2026-09-13 13:11:14,792 INFO  [io.quarkus.deployment.QuarkusAugmentor] (main) Quarkus augmentation completed in 5102ms
+Running the server in development mode. DO NOT use this configuration in production.
+2026-09-13 13:11:16,834 INFO  [org.infinispan.CONTAINER] (main) ISPN000974: Virtual threads support: enabled
+2026-09-13 13:11:17,376 INFO  [org.hibernate.orm.jdbc.batch] (JPA Startup Thread) HHH100501: Automatic JDBC statement batching enabled (maximum batch size 32)
+2026-09-13 13:11:17,397 WARN  [org.keycloak.common.Profile] (main) Deprecated features identity-brokering-api:v1, twitter-broker:v1 enabled by default. Check the upgrading guide for steps to use later versions if available.
+2026-09-13 13:11:17,416 WARN  [org.mariadb.jdbc.message.server.ErrorPacket] (main) Error: 1146-42S02: Table 'scim_e2e_d43595c2.MIGRATION_MODEL' doesn't exist
+2026-09-13 13:11:17,959 WARN  [liquibase.changelog.DatabaseChangeLog] (main) Due to mariadb SQL limitations, modifyDataType will lose primary key/autoincrement/not null/comment settings explicitly redefined in the change. Use <sql> or <modifySql> to re-specify all configuration if this is the case
+2026-09-13 13:11:17,959 WARN  [liquibase.changelog.DatabaseChangeLog] (main) Due to mariadb SQL limitations, setNullable will lose primary key/autoincrement/not null/comment settings explicitly redefined in the change. Use <sql> or <modifySql> to re-specify all configuration if this is the case
+2026-09-13 13:11:18,006 INFO  [org.keycloak.quarkus.runtime.storage.database.liquibase.QuarkusJpaUpdaterProvider] (main) Initializing database schema. Using changelog META-INF/jpa-changelog-master.xml
+2026-09-13 13:11:18,239 WARN  [liquibase.changelog.DatabaseChangeLog] (main) Due to mariadb SQL limitations, modifyDataType will lose primary key/autoincrement/not null/comment settings explicitly redefined in the change. Use <sql> or <modifySql> to re-specify all configuration if this is the case
+2026-09-13 13:11:18,239 WARN  [liquibase.changelog.DatabaseChangeLog] (main) Due to mariadb SQL limitations, setNullable will lose primary key/autoincrement/not null/comment settings explicitly redefined in the change. Use <sql> or <modifySql> to re-specify all configuration if this is the case
+2026-09-13 13:11:18,285 WARN  [liquibase.changelog.DatabaseChangeLog] (main) Due to mariadb SQL limitations, modifyDataType will lose primary key/autoincrement/not null/comment settings explicitly redefined in the change. Use <sql> or <modifySql> to re-specify all configuration if this is the case
+2026-09-13 13:11:18,285 WARN  [liquibase.changelog.DatabaseChangeLog] (main) Due to mariadb SQL limitations, setNullable will lose primary key/autoincrement/not null/comment settings explicitly redefined in the change. Use <sql> or <modifySql> to re-specify all configuration if this is the case
+2026-09-13 13:11:21,986 WARN  [org.mariadb.jdbc.message.server.ErrorPacket] (main) Error: 1054-42S22: Unknown column 't.DETAILS_JSON' in 'SELECT'
+2026-09-13 13:11:22,116 WARN  [org.mariadb.jdbc.message.server.ErrorPacket] (main) Error: 1054-42S22: Unknown column 't.REMEMBER_ME' in 'SELECT'
+2026-09-13 13:11:22,227 WARN  [org.mariadb.jdbc.message.server.ErrorPacket] (main) Error: 1054-42S22: Unknown column 't.REALM_ID' in 'SELECT'
+2026-09-13 13:11:22,241 WARN  [org.mariadb.jdbc.message.server.ErrorPacket] (main) Error: 1054-42S22: Unknown column 't.LAST_MODIFIED_TIMESTAMP' in 'SELECT'
+2026-09-13 13:11:22,245 WARN  [org.mariadb.jdbc.message.server.ErrorPacket] (main) Error: 1054-42S22: Unknown column 't.CREATED_TIMESTAMP' in 'SELECT'
+2026-09-13 13:11:22,260 WARN  [org.mariadb.jdbc.message.server.ErrorPacket] (main) Error: 1054-42S22: Unknown column 't.DISPLAY_NAME' in 'SELECT'
+2026-09-13 13:11:22,478 WARN  [org.mariadb.jdbc.message.server.ErrorPacket] (main) Error: 1054-42S22: Unknown column 't.CREATED_TIMESTAMP' in 'SELECT'
+2026-09-13 13:11:22,483 WARN  [org.mariadb.jdbc.message.server.ErrorPacket] (main) Error: 1054-42S22: Unknown column 't.LAST_MODIFIED_TIMESTAMP' in 'SELECT'
+2026-09-13 13:11:23,493 INFO  [org.keycloak.quarkus.runtime.storage.database.liquibase.QuarkusJpaUpdaterProvider] (main) Initializing database schema. Using changelog META-INF/scim-outbox-changelog.xml
+2026-09-13 13:11:24,224 INFO  [org.infinispan.CONTAINER] (main) ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.ImmutableProtoStreamMarshaller'
+2026-09-13 13:11:24,441 INFO  [org.keycloak.connections.infinispan.DefaultInfinispanConnectionProviderFactory] (main) Node name: node_550653, Site name: null, Cluster name: ISPN
+2026-09-13 13:11:24,537 INFO  [org.keycloak.quarkus.runtime.storage.database.jpa.DatabaseIndexChecker] (db-index-checker) Running database index checker
+2026-09-13 13:11:24,564 INFO  [org.keycloak.models.workflow.WorkflowsEventListenerFactory] (main) Workflow runner task scheduled: next execution at 01:11:24, then every PT12H
+2026-09-13 13:11:24,641 INFO  [org.keycloak.services] (main) KC-SERVICES0050: Initializing master realm
+2026-09-13 13:11:25,637 INFO  [org.keycloak.services] (main) KC-SERVICES0077: Created temporary admin user with username root
+2026-09-13 13:11:25,712 INFO  [org.keycloak.services.resources.KeycloakApplication] (main) Bootstrap completed in 8.314000 seconds
+2026-09-13 13:11:25,791 INFO  [io.quarkus] (main) Keycloak 26.7.3 on JVM (powered by Quarkus 3.33.3.1) started in 10.928s. Listening on: http://0.0.0.0:8080
+2026-09-13 13:11:25,791 INFO  [io.quarkus] (main) Profile dev activated. 
+2026-09-13 13:11:25,791 INFO  [io.quarkus] (main) Installed features: [agroal, cdi, hibernate-orm, jdbc-mariadb, keycloak, narayana-jta, opentelemetry, rest, rest-jackson, smallrye-context-propagation, vertx]
+2026-09-13 13:11:41,271 WARN  [com.example.keycloak.queue.OutboxWorker] (scim-outbox) SCIM outbox id=13 attempts=1 SCIM status=503

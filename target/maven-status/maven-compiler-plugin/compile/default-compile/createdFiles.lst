@@ -1,0 +1,15 @@
+com/example/keycloak/AdminScimEventListenerProvider.class
+com/example/keycloak/AdminScimEventListenerProviderFactory.class
+com/example/keycloak/queue/OutboxWorker.class
+com/example/keycloak/queue/ScimJpaProviderFactory.class
+com/example/keycloak/queue/OutboxEntry.class
+com/example/scim/ScimUser$Email.class
+com/example/keycloak/queue/WorkerLock.class
+com/example/scim/ScimUser.class
+com/example/keycloak/queue/ScimJpaProviderFactory$1.class
+com/example/scim/ScimClient.class
+com/example/keycloak/GroupSynchronizer.class
+com/example/keycloak/queue/GroupLink.class
+com/example/scim/ScimUser$Phone.class
+com/example/scim/ScimException.class
+com/example/keycloak/OutboundScimProvider.class

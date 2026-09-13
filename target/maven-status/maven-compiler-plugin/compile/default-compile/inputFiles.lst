@@ -1,0 +1,12 @@
+/workspace/src/main/java/com/example/keycloak/queue/WorkerLock.java
+/workspace/src/main/java/com/example/keycloak/GroupSynchronizer.java
+/workspace/src/main/java/com/example/keycloak/queue/GroupLink.java
+/workspace/src/main/java/com/example/scim/ScimException.java
+/workspace/src/main/java/com/example/keycloak/queue/OutboxWorker.java
+/workspace/src/main/java/com/example/keycloak/queue/ScimJpaProviderFactory.java
+/workspace/src/main/java/com/example/scim/ScimClient.java
+/workspace/src/main/java/com/example/keycloak/queue/OutboxEntry.java
+/workspace/src/main/java/com/example/scim/ScimUser.java
+/workspace/src/main/java/com/example/keycloak/AdminScimEventListenerProviderFactory.java
+/workspace/src/main/java/com/example/keycloak/AdminScimEventListenerProvider.java
+/workspace/src/main/java/com/example/keycloak/OutboundScimProvider.java

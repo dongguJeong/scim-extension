@@ -1,0 +1,4 @@
+com/example/keycloak/GroupSynchronizerTest.class
+com/example/keycloak/OutboundScimProviderTest.class
+com/example/keycloak/AdminScimEventListenerProviderTest.class
+com/example/scim/ScimClientTest.class

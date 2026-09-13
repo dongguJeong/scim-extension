@@ -1,0 +1,485 @@
+[
+  {
+    "realm": {
+      "id": "c0899c13-8583-446c-920c-28ff7136f230",
+      "realm": "master",
+      "displayName": "Keycloak",
+      "displayNameHtml": "<div class=\"kc-logo-text\"><span>Keycloak</span></div>",
+      "notBefore": 0,
+      "defaultSignatureAlgorithm": "RS256",
+      "revokeRefreshToken": false,
+      "refreshTokenMaxReuse": 0,
+      "accessTokenLifespan": 60,
+      "accessTokenLifespanForImplicitFlow": 900,
+      "ssoSessionIdleTimeout": 1800,
+      "ssoSessionMaxLifespan": 36000,
+      "ssoSessionIdleTimeoutRememberMe": 0,
+      "ssoSessionMaxLifespanRememberMe": 0,
+      "offlineSessionIdleTimeout": 2592000,
+      "offlineSessionMaxLifespanEnabled": false,
+      "offlineSessionMaxLifespan": 5184000,
+      "clientSessionIdleTimeout": 0,
+      "clientSessionMaxLifespan": 0,
+      "clientOfflineSessionIdleTimeout": 0,
+      "clientOfflineSessionMaxLifespan": 0,
+      "accessCodeLifespan": 60,
+      "accessCodeLifespanUserAction": 300,
+      "accessCodeLifespanLogin": 1800,
+      "actionTokenGeneratedByAdminLifespan": 43200,
+      "actionTokenGeneratedByUserLifespan": 300,
+      "oauth2DeviceCodeLifespan": 600,
+      "oauth2DevicePollingInterval": 5,
+      "enabled": true,
+      "sslRequired": "external",
+      "registrationAllowed": false,
+      "registrationEmailAsUsername": false,
+      "rememberMe": false,
+      "verifyEmail": false,
+      "loginWithEmailAllowed": true,
+      "duplicateEmailsAllowed": false,
+      "resetPasswordAllowed": false,
+      "editUsernameAllowed": false,
+      "bruteForceProtected": false,
+      "permanentLockout": false,
+      "maxTemporaryLockouts": 0,
+      "bruteForceStrategy": "MULTIPLE",
+      "maxFailureWaitSeconds": 900,
+      "minimumQuickLoginWaitSeconds": 60,
+      "waitIncrementSeconds": 60,
+      "quickLoginCheckMilliSeconds": 1000,
+      "maxDeltaTimeSeconds": 43200,
+      "failureFactor": 30,
+      "maxSecondaryAuthFailures": 0,
+      "defaultRole": {
+        "id": "fa0d8771-5eb9-499b-a949-9ebe0825e69f",
+        "name": "default-roles-master",
+        "description": "${role_default-roles}",
+        "composite": true,
+        "clientRole": false,
+        "containerId": "c0899c13-8583-446c-920c-28ff7136f230"
+      },
+      "requiredCredentials": [
+        "password"
+      ],
+      "otpPolicyType": "totp",
+      "otpPolicyAlgorithm": "HmacSHA1",
+      "otpPolicyInitialCounter": 0,
+      "otpPolicyDigits": 6,
+      "otpPolicyLookAheadWindow": 1,
+      "otpPolicyPeriod": 30,
+      "otpPolicyCodeReusable": false,
+      "otpSupportedApplications": [
+        "totpAppFreeOTPName",
+        "totpAppGoogleName",
+        "totpAppMicrosoftAuthenticatorName"
+      ],
+      "webAuthnPolicyRpEntityName": "keycloak",
+      "webAuthnPolicySignatureAlgorithms": [
+        "ES256",
+        "RS256"
+      ],
+      "webAuthnPolicyRpId": "",
+      "webAuthnPolicyAttestationConveyancePreference": "not specified",
+      "webAuthnPolicyAuthenticatorAttachment": "not specified",
+      "webAuthnPolicyRequireResidentKey": "not specified",
+      "webAuthnPolicyResidentKey": "not specified",
+      "webAuthnPolicyUserVerificationRequirement": "not specified",
+      "webAuthnPolicyCreateTimeout": 0,
+      "webAuthnPolicyAvoidSameAuthenticatorRegister": false,
+      "webAuthnPolicyAcceptableAaguids": [],
+      "webAuthnPolicyExtraOrigins": [],
+      "webAuthnPolicyPasswordlessRpEntityName": "keycloak",
+      "webAuthnPolicyPasswordlessSignatureAlgorithms": [
+        "ES256",
+        "RS256"
+      ],
+      "webAuthnPolicyPasswordlessRpId": "",
+      "webAuthnPolicyPasswordlessAttestationConveyancePreference": "not specified",
+      "webAuthnPolicyPasswordlessAuthenticatorAttachment": "not specified",
+      "webAuthnPolicyPasswordlessRequireResidentKey": "not specified",
+      "webAuthnPolicyPasswordlessResidentKey": "required",
+      "webAuthnPolicyPasswordlessUserVerificationRequirement": "required",
+      "webAuthnPolicyPasswordlessCreateTimeout": 0,
+      "webAuthnPolicyPasswordlessAvoidSameAuthenticatorRegister": false,
+      "webAuthnPolicyPasswordlessAcceptableAaguids": [],
+      "webAuthnPolicyPasswordlessExtraOrigins": [],
+      "browserSecurityHeaders": {
+        "contentSecurityPolicyReportOnly": "",
+        "xContentTypeOptions": "nosniff",
+        "referrerPolicy": "no-referrer",
+        "xRobotsTag": "none",
+        "xFrameOptions": "SAMEORIGIN",
+        "contentSecurityPolicy": "frame-src 'self'; frame-ancestors 'self'; object-src 'none';",
+        "strictTransportSecurity": "max-age=31536000; includeSubDomains"
+      },
+      "smtpServer": {},
+      "eventsEnabled": true,
+      "eventsListeners": [
+        "keycloak-scim-outbound",
+        "jboss-logging"
+      ],
+      "enabledEventTypes": [
+        "UPDATE_CONSENT_ERROR",
+        "UPDATE_TOTP",
+        "UPDATE_CREDENTIAL",
+        "IMPERSONATE_ERROR",
+        "CUSTOM_REQUIRED_ACTION",
+        "RESTART_AUTHENTICATION",
+        "VERIFIABLE_CREDENTIAL_OFFER_REQUEST",
+        "IMPERSONATE",
+        "LOGIN",
+        "CLIENT_INITIATED_ACCOUNT_LINKING",
+        "OAUTH2_EXTENSION_GRANT",
+        "USER_DISABLED_BY_PERMANENT_LOCKOUT",
+        "VERIFIABLE_CREDENTIAL_REQUEST",
+        "REMOVE_CREDENTIAL_ERROR",
+        "TOKEN_EXCHANGE",
+        "REGISTER",
+        "DELETE_ACCOUNT_ERROR",
+        "VERIFIABLE_CREDENTIAL_OFFER_REQUEST_ERROR",
+        "IDENTITY_PROVIDER_LINK_ACCOUNT",
+        "USER_DISABLED_BY_TEMPORARY_LOCKOUT",
+        "DELETE_ACCOUNT",
+        "UPDATE_PASSWORD",
+        "IDENTITY_PROVIDER_FIRST_LOGIN",
+        "VERIFY_EMAIL",
+        "CLIENT_LOGIN_ERROR",
+        "RESTART_AUTHENTICATION_ERROR",
+        "EXECUTE_ACTIONS",
+        "REMOVE_FEDERATED_IDENTITY_ERROR",
+        "TOKEN_EXCHANGE_ERROR",
+        "VERIFIABLE_CREDENTIAL_PRE_AUTHORIZED_GRANT",
+        "FEDERATED_IDENTITY_OVERRIDE_LINK",
+        "SEND_IDENTITY_PROVIDER_LINK_ERROR",
+        "VERIFIABLE_CREDENTIAL_CREATE_OFFER",
+        "JWT_AUTHORIZATION_GRANT_ERROR",
+        "VERIFIABLE_CREDENTIAL_PRE_AUTHORIZED_GRANT_ERROR",
+        "EXECUTE_ACTION_TOKEN_ERROR",
+        "OAUTH2_EXTENSION_GRANT_ERROR",
+        "SEND_VERIFY_EMAIL",
+        "EXECUTE_ACTIONS_ERROR",
+        "OAUTH2_DEVICE_CODE_TO_TOKEN",
+        "OAUTH2_DEVICE_VERIFY_USER_CODE_ERROR",
+        "REVOKE_GRANT_ERROR",
+        "UPDATE_EMAIL_ERROR",
+        "INVITE_ORG_ERROR",
+        "UPDATE_PROFILE",
+        "VERIFIABLE_CREDENTIAL_REQUEST_ERROR",
+        "SEND_IDENTITY_PROVIDER_LINK",
+        "SEND_VERIFY_EMAIL_ERROR",
+        "CLIENT_INITIATED_ACCOUNT_LINKING_ERROR",
+        "OAUTH2_DEVICE_AUTH_ERROR",
+        "REMOVE_TOTP_ERROR",
+        "VERIFY_EMAIL_ERROR",
+        "CLIENT_UPDATE",
+        "JWT_AUTHORIZATION_GRANT",
+        "UPDATE_TOTP_ERROR",
+        "VERIFY_PROFILE",
+        "GRANT_CONSENT_ERROR",
+        "SEND_RESET_PASSWORD",
+        "GRANT_CONSENT",
+        "VERIFY_PROFILE_ERROR",
+        "REMOVE_TOTP",
+        "REVOKE_GRANT",
+        "LOGIN_ERROR",
+        "CLIENT_LOGIN",
+        "RESET_PASSWORD_ERROR",
+        "CODE_TO_TOKEN_ERROR",
+        "OAUTH2_DEVICE_CODE_TO_TOKEN_ERROR",
+        "UPDATE_PROFILE_ERROR",
+        "OAUTH2_DEVICE_VERIFY_USER_CODE",
+        "UPDATE_PASSWORD_ERROR",
+        "IDENTITY_PROVIDER_LOGIN",
+        "AUTHREQID_TO_TOKEN",
+        "LOGOUT",
+        "CLIENT_REGISTER",
+        "CLIENT_DELETE",
+        "FEDERATED_IDENTITY_LINK_ERROR",
+        "CLIENT_DELETE_ERROR",
+        "PERMISSION_TOKEN",
+        "UPDATE_CREDENTIAL_ERROR",
+        "OAUTH2_DEVICE_AUTH",
+        "REMOVE_FEDERATED_IDENTITY",
+        "IDENTITY_PROVIDER_POST_LOGIN",
+        "VERIFIABLE_CREDENTIAL_CREATE_OFFER_ERROR",
+        "IDENTITY_PROVIDER_LINK_ACCOUNT_ERROR",
+        "FEDERATED_IDENTITY_OVERRIDE_LINK_ERROR",
+        "UPDATE_EMAIL",
+        "REGISTER_ERROR",
+        "EXECUTE_ACTION_TOKEN",
+        "LOGOUT_ERROR",
+        "CLIENT_UPDATE_ERROR",
+        "AUTHREQID_TO_TOKEN_ERROR",
+        "CLIENT_REGISTER_ERROR",
+        "FEDERATED_IDENTITY_LINK",
+        "INVITE_ORG",
+        "IDENTITY_PROVIDER_LOGIN_ERROR",
+        "RESET_PASSWORD",
+        "REMOVE_CREDENTIAL",
+        "UPDATE_CONSENT",
+        "SEND_RESET_PASSWORD_ERROR",
+        "CUSTOM_REQUIRED_ACTION_ERROR",
+        "IDENTITY_PROVIDER_POST_LOGIN_ERROR",
+        "CODE_TO_TOKEN",
+        "IDENTITY_PROVIDER_FIRST_LOGIN_ERROR"
+      ],
+      "adminEventsEnabled": true,
+      "adminEventsDetailsEnabled": true,
+      "internationalizationEnabled": false,
+      "browserFlow": "browser",
+      "registrationFlow": "registration",
+      "directGrantFlow": "direct grant",
+      "resetCredentialsFlow": "reset credentials",
+      "clientAuthenticationFlow": "clients",
+      "dockerAuthenticationFlow": "docker auth",
+      "firstBrokerLoginFlow": "first broker login",
+      "attributes": {
+        "cibaBackchannelTokenDeliveryMode": "poll",
+        "cibaExpiresIn": "120",
+        "cibaAuthRequestedUserHint": "login_hint",
+        "parRequestUriLifespan": "60",
+        "cibaInterval": "5",
+        "realmReusableOtpCode": "false"
+      },
+      "userManagedAccessAllowed": false,
+      "organizationsEnabled": false,
+      "verifiableCredentialsEnabled": false,
+      "adminPermissionsEnabled": false,
+      "scimApiEnabled": false,
+      "clientProfiles": {
+        "profiles": []
+      },
+      "clientPolicies": {
+        "policies": []
+      }
+    },
+    "components": [
+      {
+        "id": "847cc645-9a28-4d75-b461-baf716b403bf",
+        "name": "Allowed Client Scopes",
+        "providerId": "allowed-client-templates",
+        "providerType": "org.keycloak.services.clientregistration.policy.ClientRegistrationPolicy",
+        "parentId": "c0899c13-8583-446c-920c-28ff7136f230",
+        "subType": "authenticated",
+        "config": {
+          "allow-default-scopes": [
+            "true"
+          ]
+        }
+      },
+      {
+        "id": "9fc5fd9a-d2ac-4eb1-ab58-0f74f7d22658",
+        "name": "rsa-generated",
+        "providerId": "rsa-generated",
+        "providerType": "org.keycloak.keys.KeyProvider",
+        "parentId": "c0899c13-8583-446c-920c-28ff7136f230",
+        "config": {
+          "priority": [
+            "100"
+          ]
+        }
+      },
+      {
+        "id": "fce49f5b-73bc-4590-934b-9bc8fd28783a",
+        "name": "Trusted Hosts",
+        "providerId": "trusted-hosts",
+        "providerType": "org.keycloak.services.clientregistration.policy.ClientRegistrationPolicy",
+        "parentId": "c0899c13-8583-446c-920c-28ff7136f230",
+        "subType": "anonymous",
+        "config": {
+          "host-sending-registration-request-must-match": [
+            "true"
+          ],
+          "client-uris-must-match": [
+            "true"
+          ]
+        }
+      },
+      {
+        "id": "e82bf962-e1d8-4301-befa-0ddb17024a1a",
+        "name": "Allowed Registration Web Origins",
+        "providerId": "registration-web-origins",
+        "providerType": "org.keycloak.services.clientregistration.policy.ClientRegistrationPolicy",
+        "parentId": "c0899c13-8583-446c-920c-28ff7136f230",
+        "subType": "authenticated",
+        "config": {}
+      },
+      {
+        "id": "5d6ac7c3-e4ff-45d5-8294-36e2595d86af",
+        "name": "Allowed Registration Web Origins",
+        "providerId": "registration-web-origins",
+        "providerType": "org.keycloak.services.clientregistration.policy.ClientRegistrationPolicy",
+        "parentId": "c0899c13-8583-446c-920c-28ff7136f230",
+        "subType": "anonymous",
+        "config": {}
+      },
+      {
+        "id": "2abc8d58-bf65-4456-92cc-5f6dc4ddfb9b",
+        "name": "rsa-enc-generated",
+        "providerId": "rsa-enc-generated",
+        "providerType": "org.keycloak.keys.KeyProvider",
+        "parentId": "c0899c13-8583-446c-920c-28ff7136f230",
+        "config": {
+          "priority": [
+            "100"
+          ],
+          "algorithm": [
+            "RSA-OAEP"
+          ]
+        }
+      },
+      {
+        "id": "03cf4423-f82d-42de-9727-e050e02af7ae",
+        "name": "Local Node SCIM",
+        "providerId": "keycloak-scim-outbound",
+        "providerType": "org.keycloak.storage.UserStorageProvider",
+        "parentId": "c0899c13-8583-446c-920c-28ff7136f230",
+        "config": {
+          "userNameStrategy": [
+            "username"
+          ],
+          "baseUrl": [
+            "http://host.docker.internal:3000/scim/v2"
+          ],
+          "deprovisionAction": [
+            "delete"
+          ],
+          "syncGroups": [
+            "true"
+          ],
+          "priority": [
+            "0"
+          ],
+          "enabled": [
+            "true"
+          ],
+          "token": [
+            "root"
+          ]
+        }
+      },
+      {
+        "id": "531a6fca-f73f-4336-8b4d-9cf8e65cf50a",
+        "name": "Allowed Protocol Mapper Types",
+        "providerId": "allowed-protocol-mappers",
+        "providerType": "org.keycloak.services.clientregistration.policy.ClientRegistrationPolicy",
+        "parentId": "c0899c13-8583-446c-920c-28ff7136f230",
+        "subType": "anonymous",
+        "config": {
+          "allowed-protocol-mapper-types": [
+            "saml-role-list-mapper",
+            "oidc-usermodel-property-mapper",
+            "oidc-address-mapper",
+            "saml-user-property-mapper",
+            "oidc-usermodel-attribute-mapper",
+            "saml-user-attribute-mapper",
+            "oidc-sha256-pairwise-sub-mapper",
+            "oidc-full-name-mapper"
+          ]
+        }
+      },
+      {
+        "id": "b762b3d3-ed0e-427a-8a25-1cb15a2138a9",
+        "name": "hmac-generated-hs512",
+        "providerId": "hmac-generated",
+        "providerType": "org.keycloak.keys.KeyProvider",
+        "parentId": "c0899c13-8583-446c-920c-28ff7136f230",
+        "config": {
+          "priority": [
+            "100"
+          ],
+          "algorithm": [
+            "HS512"
+          ]
+        }
+      },
+      {
+        "id": "b4461553-91e3-45f7-a8c3-c947e45361f7",
+        "name": "Max Clients Limit",
+        "providerId": "max-clients",
+        "providerType": "org.keycloak.services.clientregistration.policy.ClientRegistrationPolicy",
+        "parentId": "c0899c13-8583-446c-920c-28ff7136f230",
+        "subType": "anonymous",
+        "config": {
+          "max-clients": [
+            "200"
+          ]
+        }
+      },
+      {
+        "id": "ba3a0a3b-40e0-48eb-9ec3-9430c8973bdd",
+        "providerId": "declarative-user-profile",
+        "providerType": "org.keycloak.userprofile.UserProfileProvider",
+        "parentId": "c0899c13-8583-446c-920c-28ff7136f230",
+        "config": {
+          "kc.user.profile.config": [
+            "{\"attributes\":[{\"name\":\"username\",\"displayName\":\"${username}\",\"validations\":{\"length\":{\"min\":3,\"max\":255},\"username-prohibited-characters\":{},\"up-username-not-idn-homograph\":{}},\"permissions\":{\"view\":[\"admin\",\"user\"],\"edit\":[\"admin\",\"user\"]},\"multivalued\":false},{\"name\":\"email\",\"displayName\":\"${email}\",\"validations\":{\"email\":{},\"length\":{\"max\":255}},\"permissions\":{\"view\":[\"admin\",\"user\"],\"edit\":[\"admin\",\"user\"]},\"multivalued\":false},{\"name\":\"displayName\",\"displayName\":\"displayName\",\"validations\":{},\"annotations\":{},\"permissions\":{\"view\":[],\"edit\":[\"admin\"]},\"multivalued\":false},{\"name\":\"ip\",\"displayName\":\"ip\",\"validations\":{},\"annotations\":{},\"permissions\":{\"view\":[],\"edit\":[\"admin\"]},\"multivalued\":true},{\"name\":\"password\",\"displayName\":\"password\",\"validations\":{},\"annotations\":{},\"permissions\":{\"view\":[],\"edit\":[\"admin\"]},\"multivalued\":false},{\"name\":\"notExpire\",\"displayName\":\"notExpire\",\"validations\":{\"options\":{\"options\":[\"true\",\"false\"]}},\"annotations\":{\"inputType\":\"select\"},\"permissions\":{\"view\":[],\"edit\":[\"admin\"]},\"multivalued\":false},{\"name\":\"expireDate\",\"displayName\":\"expireDate\",\"validations\":{},\"annotations\":{},\"permissions\":{\"view\":[],\"edit\":[\"admin\"]},\"multivalued\":false},{\"name\":\"mac\",\"displayName\":\"mac\",\"validations\":{},\"annotations\":{},\"permissions\":{\"view\":[],\"edit\":[\"admin\"]},\"multivalued\":false},{\"name\":\"company\",\"displayName\":\"company\",\"validations\":{},\"annotations\":{},\"permissions\":{\"view\":[],\"edit\":[\"admin\"]},\"multivalued\":false},{\"name\":\"phoneNumbers\",\"displayName\":\"phoneNumbers\",\"validations\":{},\"annotations\":{},\"permissions\":{\"view\":[],\"edit\":[\"admin\"]},\"multivalued\":false},{\"name\":\"active\",\"displayName\":\"active\",\"validations\":{\"options\":{\"options\":[\"true\",\"false\"]}},\"annotations\":{\"inputType\":\"select\"},\"permissions\":{\"view\":[],\"edit\":[\"admin\"]},\"multivalued\":false}],\"groups\":[{\"name\":\"user-metadata\",\"displayHeader\":\"User metadata\",\"displayDescription\":\"Attributes, which refer to user metadata\"}]}"
+          ]
+        }
+      },
+      {
+        "id": "edfea8cd-c5b3-46fd-a72f-874be6cbc8aa",
+        "name": "Allowed Protocol Mapper Types",
+        "providerId": "allowed-protocol-mappers",
+        "providerType": "org.keycloak.services.clientregistration.policy.ClientRegistrationPolicy",
+        "parentId": "c0899c13-8583-446c-920c-28ff7136f230",
+        "subType": "authenticated",
+        "config": {
+          "allowed-protocol-mapper-types": [
+            "oidc-usermodel-attribute-mapper",
+            "saml-user-property-mapper",
+            "oidc-full-name-mapper",
+            "oidc-sha256-pairwise-sub-mapper",
+            "saml-role-list-mapper",
+            "oidc-usermodel-property-mapper",
+            "oidc-address-mapper",
+            "saml-user-attribute-mapper"
+          ]
+        }
+      },
+      {
+        "id": "a74e76ac-7e12-4f97-ab56-9b794a8d554b",
+        "name": "Allowed Client Scopes",
+        "providerId": "allowed-client-templates",
+        "providerType": "org.keycloak.services.clientregistration.policy.ClientRegistrationPolicy",
+        "parentId": "c0899c13-8583-446c-920c-28ff7136f230",
+        "subType": "anonymous",
+        "config": {
+          "allow-default-scopes": [
+            "true"
+          ]
+        }
+      },
+      {
+        "id": "80ee19b3-21bb-4d02-9f7a-3879bb6ff0a6",
+        "name": "Full Scope Disabled",
+        "providerId": "scope",
+        "providerType": "org.keycloak.services.clientregistration.policy.ClientRegistrationPolicy",
+        "parentId": "c0899c13-8583-446c-920c-28ff7136f230",
+        "subType": "anonymous",
+        "config": {}
+      },
+      {
+        "id": "50ccb280-695b-46e5-8991-d51070d951f8",
+        "name": "Consent Required",
+        "providerId": "consent-required",
+        "providerType": "org.keycloak.services.clientregistration.policy.ClientRegistrationPolicy",
+        "parentId": "c0899c13-8583-446c-920c-28ff7136f230",
+        "subType": "anonymous",
+        "config": {}
+      },
+      {
+        "id": "ab78188f-44db-408b-9d1e-62b0ee8f33c4",
+        "name": "aes-generated",
+        "providerId": "aes-generated",
+        "providerType": "org.keycloak.keys.KeyProvider",
+        "parentId": "c0899c13-8583-446c-920c-28ff7136f230",
+        "config": {
+          "priority": [
+            "100"
+          ]
+        }
+      }
+    ]
+  }
+]

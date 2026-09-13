@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+ <changeSet id="scim-outbox-1" author="scim-extension">
+  <createTable tableName="SCIM_OUTBOX">
+   <column name="ID" type="BIGINT" autoIncrement="true"><constraints primaryKey="true" nullable="false"/></column>
+   <column name="REALM_ID" type="VARCHAR(255)"><constraints nullable="false"/></column>
+   <column name="RESOURCE_ID" type="VARCHAR(255)"><constraints nullable="false"/></column>
+   <column name="KIND" type="VARCHAR(255)"><constraints nullable="false"/></column>
+   <column name="ATTEMPTS" type="INT" defaultValueNumeric="0"><constraints nullable="false"/></column>
+   <column name="NEXT_ATTEMPT" type="BIGINT" defaultValueNumeric="0"><constraints nullable="false"/></column>
+   <column name="CREATED_AT" type="BIGINT"><constraints nullable="false"/></column>
+   <column name="LAST_ERROR" type="VARCHAR(255)"/>
+  </createTable>
+  <createTable tableName="SCIM_WORKER_LOCK"><column name="ID" type="INT"><constraints primaryKey="true" nullable="false"/></column></createTable>
+  <insert tableName="SCIM_WORKER_LOCK"><column name="ID" valueNumeric="1"/></insert>
+  <createTable tableName="SCIM_GROUP_LINK">
+   <column name="ID" type="VARCHAR(255)"><constraints primaryKey="true" nullable="false"/></column>
+   <column name="REALM_ID" type="VARCHAR(255)"><constraints nullable="false"/></column>
+   <column name="SCIM_ID" type="VARCHAR(255)"><constraints nullable="false"/></column>
+  </createTable>
+  <createIndex tableName="SCIM_GROUP_LINK" indexName="IDX_SCIM_GROUP_REALM"><column name="REALM_ID"/></createIndex>
+ </changeSet>
+</databaseChangeLog>

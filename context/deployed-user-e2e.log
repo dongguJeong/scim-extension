@@ -1,0 +1,3 @@
+PASS create: UUID, profile, attributes, SCIM meta response
+PASS partial update: complete snapshot, disabled account, preserved attributes
+PASS rapid re-enable/delete: physical DELETE

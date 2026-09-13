@@ -1,0 +1,6 @@
+SHA256 local/container match: 1756f65acd1a87b2c4b5e4925b8601a8355c81aecad7da3f26b01f7543f8e63f
+Pending outbox: 0
+keycloak Up About a minute
+scim-api Up 3 minutes
+scim-mariadb Up 3 minutes (healthy)
+keycloak-mariadb Up 3 minutes (healthy)

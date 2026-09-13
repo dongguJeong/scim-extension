@@ -1,0 +1,18 @@
+Appending additional Java properties to JAVA_OPTS
+Updating the configuration and installing your custom providers, if any. Please wait.
+2026-09-13 13:11:44,249 WARN  [org.keycloak.common.Profile] (build-5) Deprecated features identity-brokering-api:v1, twitter-broker:v1 enabled by default. Check the upgrading guide for steps to use later versions if available.
+2026-09-13 13:11:44,652 WARN  [org.keycloak.services] (build-17) KC-SERVICES0047: scim-outbox (com.example.keycloak.queue.ScimJpaProviderFactory) is implementing the internal SPI jpa-entity-provider. This SPI is internal and may change without notice
+2026-09-13 13:11:45,001 WARN  [org.keycloak.services] (build-17) KC-SERVICES0047: scim-admin-listener (com.example.keycloak.AdminScimEventListenerProviderFactory) is implementing the internal SPI eventsListener. This SPI is internal and may change without notice
+2026-09-13 13:11:47,731 INFO  [io.quarkus.deployment.QuarkusAugmentor] (main) Quarkus augmentation completed in 5008ms
+Running the server in development mode. DO NOT use this configuration in production.
+2026-09-13 13:11:49,962 INFO  [org.infinispan.CONTAINER] (main) ISPN000974: Virtual threads support: enabled
+2026-09-13 13:11:50,470 INFO  [org.hibernate.orm.jdbc.batch] (JPA Startup Thread) HHH100501: Automatic JDBC statement batching enabled (maximum batch size 32)
+2026-09-13 13:11:50,489 WARN  [org.keycloak.common.Profile] (main) Deprecated features identity-brokering-api:v1, twitter-broker:v1 enabled by default. Check the upgrading guide for steps to use later versions if available.
+2026-09-13 13:11:50,710 INFO  [org.keycloak.quarkus.runtime.storage.database.jpa.DatabaseIndexChecker] (db-index-checker) Running database index checker
+2026-09-13 13:11:51,283 INFO  [org.infinispan.CONTAINER] (main) ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.ImmutableProtoStreamMarshaller'
+2026-09-13 13:11:51,470 INFO  [org.keycloak.connections.infinispan.DefaultInfinispanConnectionProviderFactory] (main) Node name: node_354982, Site name: null, Cluster name: ISPN
+2026-09-13 13:11:51,479 INFO  [org.keycloak.models.workflow.WorkflowsEventListenerFactory] (main) Workflow runner task scheduled: next execution at 01:11:51, then every PT12H
+2026-09-13 13:11:51,880 INFO  [org.keycloak.services.resources.KeycloakApplication] (main) Bootstrap completed in 1.390000 seconds
+2026-09-13 13:11:51,938 INFO  [io.quarkus] (main) Keycloak 26.7.3 on JVM (powered by Quarkus 3.33.3.1) started in 4.137s. Listening on: http://0.0.0.0:8080
+2026-09-13 13:11:51,938 INFO  [io.quarkus] (main) Profile dev activated. 
+2026-09-13 13:11:51,938 INFO  [io.quarkus] (main) Installed features: [agroal, cdi, hibernate-orm, jdbc-mariadb, keycloak, narayana-jta, opentelemetry, rest, rest-jackson, smallrye-context-propagation, vertx]

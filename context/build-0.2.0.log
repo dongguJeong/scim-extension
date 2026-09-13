@@ -1,0 +1,63 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------< com.example.keycloak:scim-outbound-extension >------------
+[INFO] Building scim-outbound-extension 0.2.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ scim-outbound-extension ---
+[INFO] Deleting /workspace/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ scim-outbound-extension ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ scim-outbound-extension ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 12 source files with javac [debug release 21] to target/classes
+[INFO] /workspace/src/main/java/com/example/scim/ScimClient.java: Some input files use unchecked or unsafe operations.
+[INFO] /workspace/src/main/java/com/example/scim/ScimClient.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ scim-outbound-extension ---
+[INFO] skip non existing resourceDirectory /workspace/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ scim-outbound-extension ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 4 source files with javac [debug release 21] to target/test-classes
+[INFO] /workspace/src/test/java/com/example/keycloak/OutboundScimProviderTest.java: Some input files use unchecked or unsafe operations.
+[INFO] /workspace/src/test/java/com/example/keycloak/OutboundScimProviderTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ scim-outbound-extension ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.scim.ScimClientTest
+Sep 13, 2026 1:10:17 PM org.jboss.logmanager.JBossLoggerFinder getLogger
+ERROR: The LogManager accessed before the "java.util.logging.manager" system property was set to "org.jboss.logmanager.LogManager". Results may be unexpected.
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.836 s -- in com.example.scim.ScimClientTest
+[INFO] Running com.example.keycloak.AdminScimEventListenerProviderTest
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (/root/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.15/byte-buddy-agent-1.14.15.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.158 s -- in com.example.keycloak.AdminScimEventListenerProviderTest
+[INFO] Running com.example.keycloak.GroupSynchronizerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.476 s -- in com.example.keycloak.GroupSynchronizerTest
+[INFO] Running com.example.keycloak.OutboundScimProviderTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s -- in com.example.keycloak.OutboundScimProviderTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ scim-outbound-extension ---
+[INFO] Building jar: /workspace/target/scim-outbound-extension-0.2.0.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.572 s
+[INFO] Finished at: 2026-09-13T13:10:19Z
+[INFO] ------------------------------------------------------------------------

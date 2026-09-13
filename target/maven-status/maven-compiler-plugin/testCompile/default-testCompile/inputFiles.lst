@@ -1,0 +1,4 @@
+/workspace/src/test/java/com/example/keycloak/AdminScimEventListenerProviderTest.java
+/workspace/src/test/java/com/example/keycloak/OutboundScimProviderTest.java
+/workspace/src/test/java/com/example/keycloak/GroupSynchronizerTest.java
+/workspace/src/test/java/com/example/scim/ScimClientTest.java
